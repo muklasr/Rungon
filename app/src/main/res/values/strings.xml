@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Rungon</string>
+    <string name="title_home">Home</string>
+    <string name="title_songs">Songs</string>
+    <string name="title_albums">Albums</string>
+    <string name="title_artists">Artists</string>
+    <string name="title_playlists">Playlists</string>
+    <string name="albums_image">Album\'s Image</string>
+    <string name="search_hint">Search your library..</string>
+    <string name="welcome">Welcome,</string>
+    <string name="play_all">Play all</string>
+    <string name="shuffle">Shuffle</string>
+    <string name="most_played">Most played</string>
+    <string name="last_added">Last added</string>
+    <string name="top_artists">Top artists</string>
+    <string name="muklas">Muklas</string>
+    <string name="top_albums">Top albums</string>
+    <string name="history">History</string>
+    <string name="history_button">History Button</string>
+    <string name="last_added_button">Last Added Button</string>
+    <string name="shuffle_button">Shuffle Button</string>
+    <string name="most_played_button">Most Played Button</string>
+    <string name="menu_button">Menu Button</string>
+    <string name="mic_button">Mic Button</string>
+    <string name="add_playlist_button">Add Playlist Button</string>
+    <string name="option_button">Option Button</string>
+    <string name="repeat_button">Repeat Button</string>
+    <string name="previous_button">Previous Button</string>
+    <string name="next_button">Next Button</string>
+    <string name="show_button">Show Button</string>
+    <string name="play_button">Play Button</string>
+    <string name="pause_button">Pause Button</string>
+</resources>

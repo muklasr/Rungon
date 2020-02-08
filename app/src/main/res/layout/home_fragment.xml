@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civProfile"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/background_blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteY="45dp"
+        tools:src="@tools:sample/avatars[4]" />
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/welcome"
+        app:layout_constraintStart_toEndOf="@+id/civProfile"
+        app:layout_constraintTop_toTopOf="@+id/civProfile" />
+
+    <TextView
+        android:id="@+id/tvUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/muklas"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/civProfile"
+        app:layout_constraintStart_toStartOf="@+id/tvWelcome" />
+
+    <ImageButton
+        android:id="@+id/btnHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:layout_weight="1"
+        android:background="@drawable/background_blue"
+        android:contentDescription="@string/history_button"
+        android:padding="16dp"
+        android:src="@drawable/ic_schedule_blue_600_24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btnLastAdded"
+        app:layout_constraintTop_toBottomOf="@id/civProfile" />
+
+    <ImageButton
+        android:id="@+id/btnLastAdded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:layout_weight="1"
+        android:background="@drawable/background_orange"
+        android:contentDescription="@string/last_added_button"
+        android:padding="16dp"
+        android:src="@drawable/ic_library_add_red_600_24dp"
+        app:layout_constraintLeft_toRightOf="@id/btnHistory"
+        app:layout_constraintRight_toLeftOf="@id/btnMostPlayed"
+        app:layout_constraintTop_toBottomOf="@id/civProfile" />
+
+    <ImageButton
+        android:id="@+id/btnMostPlayed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:layout_weight="1"
+        android:background="@drawable/background_purple"
+        android:contentDescription="@string/most_played_button"
+        android:padding="16dp"
+        android:src="@drawable/ic_trending_up_purple_600_24dp"
+        app:layout_constraintLeft_toRightOf="@id/btnLastAdded"
+        app:layout_constraintRight_toLeftOf="@id/btnShuffle"
+        app:layout_constraintTop_toBottomOf="@id/civProfile" />
+
+    <ImageButton
+        android:id="@+id/btnShuffle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:layout_weight="1"
+        android:background="@drawable/background_green"
+        android:contentDescription="@string/shuffle_button"
+        android:padding="16dp"
+        android:src="@drawable/ic_shuffle_green_600_24dp"
+        app:layout_constraintLeft_toRightOf="@id/btnMostPlayed"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/civProfile" />
+
+    <TextView
+        android:id="@+id/tvHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/history"
+        app:layout_constraintEnd_toEndOf="@+id/btnHistory"
+        app:layout_constraintStart_toStartOf="@+id/btnHistory"
+        app:layout_constraintTop_toBottomOf="@+id/btnHistory" />
+
+    <TextView
+        android:id="@+id/tvLastAdded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/last_added"
+        app:layout_constraintEnd_toEndOf="@+id/btnLastAdded"
+        app:layout_constraintStart_toStartOf="@+id/btnLastAdded"
+        app:layout_constraintTop_toBottomOf="@+id/btnLastAdded" />
+
+    <TextView
+        android:id="@+id/tvMostPlayed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/most_played"
+        app:layout_constraintEnd_toEndOf="@+id/btnMostPlayed"
+        app:layout_constraintStart_toStartOf="@+id/btnMostPlayed"
+        app:layout_constraintTop_toBottomOf="@+id/btnMostPlayed" />
+
+    <TextView
+        android:id="@+id/tvShuffle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/shuffle"
+        app:layout_constraintEnd_toEndOf="@+id/btnShuffle"
+        app:layout_constraintStart_toStartOf="@+id/btnShuffle"
+        app:layout_constraintTop_toBottomOf="@+id/btnShuffle" />
+
+    <TextView
+        android:id="@+id/tvTopArtists"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/top_artists"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvHistory" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTopArtists"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTopArtists"
+        tools:itemCount="1"
+        tools:listitem="@layout/item_artist" />
+
+    <TextView
+        android:id="@+id/tvTopAlbums"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/top_albums"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rvTopArtists" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTopAlbums"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTopAlbums"
+        tools:itemCount="1"
+        tools:listitem="@layout/item_album" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

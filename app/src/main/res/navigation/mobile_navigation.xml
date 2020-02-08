@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.muklas.rungon.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/home_fragment" />
+    <fragment
+        android:id="@+id/navigation_songs"
+        android:name="com.muklas.rungon.ui.songs.SongsFragment"
+        android:label="@string/title_songs"
+        tools:layout="@layout/home_fragment" />
+    <fragment
+        android:id="@+id/navigation_albums"
+        android:name="com.muklas.rungon.ui.albums.AlbumsFragment"
+        android:label="@string/title_albums"
+        tools:layout="@layout/albums_fragment" />
+    <fragment
+        android:id="@+id/navigation_artists"
+        android:name="com.muklas.rungon.ui.artists.ArtistsFragment"
+        android:label="@string/title_artists"
+        tools:layout="@layout/artists_fragment" />
+    <fragment
+        android:id="@+id/navigation_playlists"
+        android:name="com.muklas.rungon.ui.playlists.PlaylistsFragment"
+        android:label="@string/title_playlists"
+        tools:layout="@layout/playlists_fragment" />
+
+</navigation>

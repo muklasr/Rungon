@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_grid"
+        android:title="Grid size">
+        <menu>
+            <group
+                android:id="@+id/grid_size"
+                android:checkableBehavior="single">
+                <item
+                    android:id="@+id/menu_grid1"
+                    android:title="1" />
+                <item
+                    android:id="@+id/menu_grid2"
+                    android:title="2" />
+                <item
+                    android:id="@+id/menu_grid3"
+                    android:title="3" />
+                <item
+                    android:id="@+id/menu_grid4"
+                    android:title="4" />
+            </group>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/menu_sort"
+        android:title="Sort order">
+        <menu>
+            <group
+                android:id="@+id/sort_order"
+                android:checkableBehavior="single">
+                <item
+                    android:id="@+id/menu_ascending"
+                    android:title="Ascending" />
+                <item
+                    android:id="@+id/menu_descending"
+                    android:title="Descending" />
+            </group>
+        </menu>
+    </item>
+</menu>
